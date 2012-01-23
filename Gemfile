@@ -11,9 +11,20 @@ gem 'dalli'
 gem 'possessive'
 gem 'jquery-rails'
 gem 'aws-s3'
+gem "zurb-foundation", :group => :assets
+
+gem 'thin'
+gem 'haml-rails'
+gem 'sass'
+gem 'rb-fsevent'
+
+gem 'json'
+gem 'coffee-script'
+gem 'uglifier'
+
 
 group :cucumber do
-  gem "builder", "~> 2.1.2"  
+  gem "builder"
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
@@ -23,16 +34,9 @@ group :cucumber do
 end  
 
 group :development do
-  gem 'wrong'
   gem 'rspec-rails'
-  gem 'annotate-models'
-  #gem 'annotate-models', '1.0.4'
-  gem 'selenium-webdriver'
 end
 
-group :mysql do
-  gem 'mysql2'
-end
 
 group :postgresql do
   gem 'pg'

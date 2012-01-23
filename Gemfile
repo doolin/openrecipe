@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails' 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'rails'
 gem 'devise'
 gem 'dynamic_form'
 #gem 'friendly_id' # Looks cool, check into it later.
@@ -35,6 +34,7 @@ end
 
 group :development do
   gem 'rspec-rails'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 
@@ -47,6 +47,7 @@ group :test do
   gem 'rspec-rails'
   gem 'webrat'
   gem 'factory_girl_rails'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 # autotest
 # autotest-rails-pure
 # autotest-fsevent

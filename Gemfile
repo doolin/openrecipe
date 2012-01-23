@@ -23,7 +23,7 @@ gem 'coffee-script'
 gem 'uglifier'
 
 
-group :cucumber do
+group :cucumber, :test do
   gem "builder"
   gem 'capybara'
   gem 'database_cleaner'

@@ -4,13 +4,19 @@ require 'rails/all'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+#Bundler.require(:default, Rails.env) if defined?(Bundler)
+
+# From https://github.com/zurb/foundation-rails
+Bundler.require(:default, :assets, Rails.env)
 
 module Recipeserver
   class Application < Rails::Application
-    
+
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    # Devise
+    config.assets.initialize_on_precompile = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

@@ -12,5 +12,16 @@
   .field
     = f.label :instructions
     = f.text_area :instructions
+    %h2 Ingredients
+    = f.fields_for(:ingredients) do |ingredients_form|
+      .field
+        = ingredients_form.label :quantity
+        = ingredients_form.text_field :quantity
+      .field
+        = ingredients_form.label :unit
+        = ingredients_form.text_field :unit
+      .field
+        = ingredients_form.label :itype
+        = ingredients_form.text_field :itype
   .actions
     = f.submit 'Save'

@@ -1,4 +1,9 @@
 /*
- *= require_self
  *= require foundation
+ *= require_self
+ *= require_tree .
  */
+
+.container {
+  padding: 0px;
+}

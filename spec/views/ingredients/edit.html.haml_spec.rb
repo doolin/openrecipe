@@ -18,7 +18,7 @@ describe "ingredients/edit" do
       assert_select "input#ingredient_recipe_id", :name => "ingredient[recipe_id]"
       assert_select "input#ingredient_quantity", :name => "ingredient[quantity]"
       assert_select "input#ingredient_unit", :name => "ingredient[unit]"
-      assert_select "input#ingredient_type", :name => "ingredient[type]"
+      assert_select "input#ingredient_itype", :name => "ingredient[itype]"
     end
   end
 end

@@ -4,9 +4,11 @@
     %title Open Recipe
     = stylesheet_link_tag :application
     = javascript_include_tag :application
+    <script type="text/javascript" src="http://use.typekit.com/vgg5gun.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     = csrf_meta_tag
   %body
+    = render 'layouts/header'
     .container
-      = render 'layouts/header'
       = yield
-      = render 'layouts/footer'
+    = render 'layouts/footer'

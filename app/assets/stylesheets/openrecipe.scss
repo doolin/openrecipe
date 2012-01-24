@@ -1,0 +1,58 @@
+/**
+ * openrecipe.scss
+ */
+
+
+body {
+  //background-color: #808000;
+}
+
+header {
+  background-color: #F0DC82;
+}
+
+footer {
+  //background-color: #D19FE8;
+  background-color: #F0DC82;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  //overflow: none;
+}
+
+h1, h2 {
+  font-family: "adelle",serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+form label {
+  display: inline;
+  font-family: "adelle",serif;
+  font-style: normal;
+}
+
+
+.container {
+  padding: 0 10px 0 10px;
+  //background-color: #808000;  // hot pink
+}
+
+.container .row {
+  //background-color: #FF69B4;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}

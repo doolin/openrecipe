@@ -1,6 +1,8 @@
-%h1 Editing recipe
+%h2 Editing #{h @recipe.title}
 
-= render 'form'
+.row
+  .eight.columns.centered
+    = render 'form'
 
 = link_to 'Show', @recipe
 \|

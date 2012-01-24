@@ -5,23 +5,18 @@
       %ul
         - @recipe.errors.full_messages.each do |msg|
           %li= msg
+  .cf
+    = render :partial => 'ingredients/item', :locals => { :label => f.label(:title), :text => f.text_field(:title) }
+  .cf
+    = render :partial => 'ingredients/item', :locals => { :label => f.label(:instructions), :text => f.text_area(:instructions) }
 
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :instructions
-    = f.text_area :instructions
-    %h2 Ingredients
-    = f.fields_for(:ingredients) do |ingredients_form|
-      .field
-        = ingredients_form.label :quantity
-        = ingredients_form.text_field :quantity
-      .field
-        = ingredients_form.label :unit
-        = ingredients_form.text_field :unit
-      .field
-        = ingredients_form.label :itype
-        = ingredients_form.text_field :itype
+  %h2 Ingredients
+  = f.fields_for(:ingredients) do |iform|
+    .cf
+      = render :partial => 'ingredients/item', :locals => { :label => iform.label(:quantity), :text => iform.text_field(:quantity) }
+    .cf
+      = render :partial => 'ingredients/item', :locals => { :label => iform.label(:unit), :text => iform.text_field(:unit) }
+    .cf
+      = render :partial => 'ingredients/item', :locals => { :label => iform.label(:itype), :text => iform.text_field(:itype) }
   .actions
     = f.submit 'Save'

@@ -4,11 +4,17 @@
 
 
 body {
+  // Move this to public/images
+  background: #ccc url('http://subtlepatterns.com/patterns/white_sand.png');
   //background-color: #808000;
 }
 
 header {
   background-color: #F0DC82;
+}
+
+header nav {
+  text-align: right;
 }
 
 footer {
@@ -18,6 +24,10 @@ footer {
   bottom: 0px;
   width: 100%;
   //overflow: none;
+}
+
+footer > .row {
+  text-align: right;
 }
 
 h1, h2 {

@@ -1,4 +1,13 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+/**
+ * pages.scss
+ */
+header {
+  background-color: #F0DC82;
+}
+
+footer {
+  background-color: #D19FE8;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}

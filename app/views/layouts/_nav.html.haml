@@ -1,0 +1,28 @@
+%nav#topbar-asset.container
+  .row
+    .twelve.columns
+      %nav#user_nav.align-right
+        - if user_signed_in?
+          - if current_user.profile
+            = link_to "My Profile", profile_path(current_user.lastname.downcase), :rel => 'author'
+            |
+          - if !current_user.recipes.empty?
+            = link_to "My Recipes", user_path(current_user), :rel => 'author'
+            |
+            \#{link_to "All Recipes", recipes_path} |
+            - count = Project.count
+            = link_to "All Projects", projects_path
+            |
+          Signed in as #{current_user.email} |
+          \#{link_to "Sign out", destroy_user_session_path}
+        - else
+          = link_to "Home", root_path
+          |
+          \#{link_to "About", '/about'} |
+          |
+          \#{link_to "Recipes", recipes_path} |
+          - count = Recipe.count
+          |
+          \#{link_to "Sign up", new_user_registration_path} |
+          |
+          \#{link_to "Sign in", new_user_session_path}

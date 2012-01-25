@@ -8,29 +8,32 @@ Feature: The front page header and footer has certain required links
   Scenario: Reader visits About page
     Given reader is on home page
     When the reader clicks "About"
-    Then the reader should be on the "About" page
+    Then the reader should be on the "about" page
     #Then show me the page
 
   Scenario Outline: Reader visits nav links
     Given reader is on home page
     When the reader clicks "<anchor>"
-    Then the reader should be on the "<page>" page
+    Then the reader should be on the "<id>" page
     #Then show me the page
 
     Scenarios: Let's go visit nav links
-    | anchor  | page  |
-    | About   | About |
-    | Recipes | Recipes |
+    | anchor  | id      |
+    | About   | about   |
+    | Recipes | recipes |
+    | Sign in | sign_in |
+    | Sign up | sign_up |
 
   Scenario Outline: Reader visits footer links
     Given reader is on home page
     When the reader clicks "<anchor>"
-    Then the reader should be on the "<page>" page
+    Then the reader should be on the "<id>" page
     #Then show me the page
 
     Scenarios: Let's go visit footer links
-    | anchor  | page    |
-    | Terms   | Terms   |
-    | FAQ     | FAQ     |
-    | Privacy | Privacy |
-    | Contact | Contact |
+    | anchor  | id      |
+    | Terms   | terms   |
+    | Team    | team    |
+    | FAQ     | faq     |
+    | Privacy | privacy |
+    | Contact | contact |

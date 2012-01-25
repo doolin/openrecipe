@@ -8,7 +8,9 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     = csrf_meta_tag
   %body
+    = render 'layouts/nav'
     = render 'layouts/header'
     .container
       = yield
     = render 'layouts/footer'
+    = render 'layouts/analytics'

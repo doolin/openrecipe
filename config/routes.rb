@@ -1,4 +1,14 @@
 Recipeserver::Application.routes.draw do
+  get "pages/terms"
+
+  get "pages/team"
+
+  get "pages/faq"
+
+  get "pages/privacy"
+
+  get "pages/contact"
+
   resources :ingredients
 
   resources :recipes
@@ -8,7 +18,12 @@ Recipeserver::Application.routes.draw do
   get "pages/index"
 
   root :to => 'pages#index'
-  match '/about' => 'pages#about'
+  match '/about'   => 'pages#about'
+  match '/terms'   => 'pages#terms'
+  match '/team'    => 'pages#team'
+  match '/faq'     => 'pages#faq'
+  match '/privacy' => 'pages#privacy'
+  match '/contact' => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,4 +1,16 @@
 class PagesController < ApplicationController
-  def index
+  def terms
+  end
+
+  def team
+  end
+
+  def faq
+  end
+
+  def privacy
+  end
+
+  def contact
   end
 end

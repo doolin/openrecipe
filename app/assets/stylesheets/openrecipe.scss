@@ -9,6 +9,10 @@ body {
   //background-color: #808000;
 }
 
+nav {
+  background-color: #F0DC82;
+}
+
 header {
   background-color: #F0DC82;
 }
@@ -65,4 +69,12 @@ form label {
 
 .cf:after {
     clear:both;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-left {
+  float: left;
 }

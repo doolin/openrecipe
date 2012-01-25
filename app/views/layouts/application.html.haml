@@ -12,6 +12,8 @@
     = render 'layouts/nav'
     = render 'layouts/header'
     .container
-      = yield
+      .row
+        .twelve.columns.centered
+          = yield
     = render 'layouts/footer'
     = render 'layouts/analytics'

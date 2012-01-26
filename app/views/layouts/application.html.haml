@@ -8,7 +8,7 @@
     <script type="text/javascript" src="http://use.typekit.com/vgg5gun.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     = csrf_meta_tag
-  %body
+  %body{ :class => "#{params[:controller]} #{params[:action]}", :id => "#{params[:action]}" }
     = render 'layouts/nav'
     = render 'layouts/header'
     .container

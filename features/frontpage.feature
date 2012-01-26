@@ -20,9 +20,9 @@ Feature: The front page header and footer has certain required links
     Scenarios: Let's go visit nav links
     | anchor  | id      |
     | About   | about   |
-    | Recipes | recipes |
-    | Sign in | sign_in |
-    | Sign up | sign_up |
+    | Recipes | index   |
+    | Sign in | new     |
+    | Sign up | new     |
 
   Scenario Outline: Reader visits footer links
     Given reader is on home page

@@ -45,7 +45,8 @@ end
 group :test do
   gem 'rspec'
   gem 'rspec-rails'
-  gem 'webrat'
+  gem 'capybara'
+  #gem 'webrat'
   gem 'factory_girl_rails'
   gem 'sqlite3-ruby', :require => 'sqlite3'
 # autotest

@@ -1,0 +1,12 @@
+%ul.cf.social-links
+  %li#twitter
+    %a{:href => "http://twitter.com/home?status=Check%20out%20the%20Portfolio%20Project%20-%20#{request.url}"}
+      = image_tag('twitter.png', :alt => 'Share this on twitter', :title => 'Share this on twitter')
+  %li#facebook
+    %a{:href => "http://www.facebook.com/sharer.php?u=#{request.url}&t=PortfolioProject", :target => "blank"}
+      = image_tag('facebook.png', :alt => "Share this on facebook", :title => "Share this on facebook")
+  %li#linkedin
+    %a{:href => "http://www.linkedin.com/shareArticle?mini=true&url=#{request.url}&title=Check%20out%20Portfolio-Project.com&source=#{request.url}"}
+      = image_tag('linkedin.png', :alt => "Share this on linkedin", :title => "Share this on linkedin")
+  %li#gplus
+    .g-plusone{"data-count" => "false", "data-size" => "small"}

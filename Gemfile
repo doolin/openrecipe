@@ -21,6 +21,9 @@ gem 'json'
 gem 'coffee-script'
 gem 'uglifier'
 
+gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin', :ref => '8b69d680ab93890c00d149556cf99def53babdb7'
+gem 'sass-rails'
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :cucumber, :test do
   gem "builder"

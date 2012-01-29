@@ -8,7 +8,8 @@
     %meta{:charset => "utf-8"}
     %script{:src => "http://use.typekit.com/vgg5gun.js", :type => "text/javascript"}
     :javascript
-      try{Typekit.load();}catch(e){}    = csrf_meta_tag
+      try{Typekit.load();}catch(e){}
+    = csrf_meta_tag
   %body{ :class => "#{params[:controller]} #{params[:action]}", :id => "#{params[:action]}" }
     = render 'layouts/nav'
     = render 'layouts/header'

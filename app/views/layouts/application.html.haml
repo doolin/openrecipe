@@ -5,9 +5,10 @@
     = stylesheet_link_tag :application
     = javascript_include_tag :application
     %meta{:content => "CfzHCYvtchIIvKDPJBf5d5jSI4ydwHIQUbn1kx8S1iM", :name => "google-site-verification"}/
-    %meta{:charset => "utf-8"}    <script type="text/javascript" src="http://use.typekit.com/vgg5gun.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    = csrf_meta_tag
+    %meta{:charset => "utf-8"}
+    %script{:src => "http://use.typekit.com/vgg5gun.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}    = csrf_meta_tag
   %body{ :class => "#{params[:controller]} #{params[:action]}", :id => "#{params[:action]}" }
     = render 'layouts/nav'
     = render 'layouts/header'

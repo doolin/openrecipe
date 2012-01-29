@@ -67,6 +67,8 @@ ActiveAdmin.setup do |config|
   # to return the currently logged in user.
   config.current_user_method = :current_admin_user
 
+  #config.authentication_method = false
+  #config.current_user_method   = false
 
   # == Logging Out
   #

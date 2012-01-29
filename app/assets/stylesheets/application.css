@@ -1,5 +1,5 @@
 /*
  *= require foundation
  *= require_self
- *= require_tree .
+ *= require_directory './site/'
  */

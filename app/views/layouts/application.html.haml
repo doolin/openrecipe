@@ -4,8 +4,8 @@
     %title Open Recipe
     = stylesheet_link_tag :application
     = javascript_include_tag :application
-    <meta name="google-site-verification" content="CfzHCYvtchIIvKDPJBf5d5jSI4ydwHIQUbn1kx8S1iM" />
-    <script type="text/javascript" src="http://use.typekit.com/vgg5gun.js"></script>
+    %meta{:content => "CfzHCYvtchIIvKDPJBf5d5jSI4ydwHIQUbn1kx8S1iM", :name => "google-site-verification"}/
+    %meta{:charset => "utf-8"}    <script type="text/javascript" src="http://use.typekit.com/vgg5gun.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     = csrf_meta_tag
   %body{ :class => "#{params[:controller]} #{params[:action]}", :id => "#{params[:action]}" }

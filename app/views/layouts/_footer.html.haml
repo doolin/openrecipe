@@ -1,6 +1,8 @@
 %footer
   .row
     #footer.twelve.columns
+      %p.align-left.footer-text
+        %a{:href => "http://validator.w3.org/check?uri=#{request.url};ss=1;st=1;outline=1;No200=1;verbose=1"} Validate
       %p.align-right.footer-text
         = link_to "Contact", '/contact'
         \ 

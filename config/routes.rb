@@ -4,20 +4,17 @@ Recipeserver::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   get "pages/terms"
-
   get "pages/team"
-
   get "pages/faq"
-
   get "pages/privacy"
-
   get "pages/contact"
 
   resources :ingredients
 
   resources :recipes
 
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
+  resources :users
 
   get "pages/index"
 
@@ -28,6 +25,11 @@ Recipeserver::Application.routes.draw do
   match '/faq'     => 'pages#faq'
   match '/privacy' => 'pages#privacy'
   match '/contact' => 'pages#contact'
+
+  devise_scope :user do
+    root :to => 'users#show'
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

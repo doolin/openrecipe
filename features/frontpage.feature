@@ -5,12 +5,6 @@ Feature: The front page header and footer has certain required links
   ensuring correct targeting. This feature simply ensures those
   links exist and point at the right pages.
   
-  Scenario: Reader visits About page
-    Given reader is on home page
-    When the reader clicks "About"
-    Then the reader should be on the "about" page
-    #Then show me the page
-
   Scenario Outline: Reader visits nav links
     Given reader is on home page
     When the reader clicks "<anchor>"
@@ -37,3 +31,9 @@ Feature: The front page header and footer has certain required links
     | FAQ     | faq     |
     | Privacy | privacy |
     | Contact | contact |
+
+  Scenario: Reader visits About page
+    Given reader is on home page
+    When the reader clicks "About"
+    Then the reader should be on the "about" page
+    #Then show me the page

@@ -3,7 +3,7 @@
     .twelve.columns
       %nav#user_nav.align-right
         - if user_signed_in?
-          Signed in as #{current_user.email} |
+          \#{link_to "Settings", edit_user_registration_path} |
           \#{link_to "Sign out", destroy_user_session_path, :method => :delete }
         - else
           = link_to "Home", root_path

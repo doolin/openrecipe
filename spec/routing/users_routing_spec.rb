@@ -22,11 +22,6 @@ describe UsersController do
       get("/users/1/edit").should route_to("users#edit", :id => "1")
     end
 
-    # Overridden by the registrations controller for Devise
-    xit "routes to #create" do
-      post("/users").should route_to("users#create")
-    end
-
     # Also handled by the /spec/routing/registrations_routing_spec.rb
     it "routes to #create" do
       post("/users").should route_to("registrations#create")

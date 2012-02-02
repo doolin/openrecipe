@@ -9,10 +9,10 @@ describe "pages/index.html.haml" do
     controller.request.path_parameters["action"].should eq("index")
   end
 
-  xit "has h1 Terms & Conditions" do
+  it "has temporary text" do
     render
-    rendered.should have_selector('h1') do
-      rendered.should match(/Terms & Conditions/)
+    rendered.should have_selector('p') do
+      rendered.should match(/Main text in app/)
     end
   end
 end

@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe Ingredient do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "should create a valid ingredient" do
+    ing = Ingredient.create(:type => 'orange')
+    ing.should be_valid
+  end
+
 end

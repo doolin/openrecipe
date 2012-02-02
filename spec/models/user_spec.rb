@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "should create a valid user" do
+    @user = User.create(:email => 'foo@bar.com', :password => 'foobar')
+    @user.should be_valid
+  end
+
 end

@@ -10,7 +10,7 @@
     :javascript
       try{Typekit.load();}catch(e){}
     = csrf_meta_tag
-  %body{ :class => "#{params[:controller].gsub(/\//,'-')} #{params[:action]}", :id => "#{params[:action]}" }
+  %body{ hash1, template_id, template_class }
     = render 'layouts/nav'
     = render 'layouts/header'
     .container

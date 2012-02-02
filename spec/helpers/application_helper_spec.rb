@@ -10,6 +10,10 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe PagesHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe ApplicationHelper do
+
+  xit "should generate correct body class and id" do
+    render :layout => 'layouts/application', :template => 'pages/index', :controller => 'pages', :action => 'index'
+  end
+
 end

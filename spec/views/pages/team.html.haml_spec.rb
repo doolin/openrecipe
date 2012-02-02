@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "pages/team.html.haml" do
+describe "pages/team" do
   it "infers the controller path" do
     controller.request.path_parameters["controller"].should eq("pages")
   end
@@ -9,7 +9,7 @@ describe "pages/team.html.haml" do
     controller.request.path_parameters["action"].should eq("team")
   end
 
-  it "has h1 Terms & Conditions" do
+  it "has h1 Team" do
     render
     rendered.should have_selector('h1') do
       rendered.should match(/Team/)

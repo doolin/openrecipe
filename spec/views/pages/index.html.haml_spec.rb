@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "pages/index.html.haml" do
+describe "pages/index" do
   it "infers the controller path" do
     controller.request.path_parameters["controller"].should eq("pages")
   end
@@ -9,7 +9,7 @@ describe "pages/index.html.haml" do
     controller.request.path_parameters["action"].should eq("index")
   end
 
-  it "has temporary text" do
+  it "has temporary text for index page" do
     render
     rendered.should have_selector('p') do
       rendered.should match(/Main text in app/)

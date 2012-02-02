@@ -49,7 +49,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
-  #gem 'webrat'
+  gem 'webrat'
   gem 'factory_girl_rails'
   gem 'sqlite3-ruby', :require => 'sqlite3'
 # autotest

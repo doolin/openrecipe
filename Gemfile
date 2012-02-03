@@ -25,6 +25,8 @@ gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin', :ref => '
 gem 'sass-rails'
 gem "meta_search",    '>= 1.1.0.pre'
 
+gem 'simplecov', :require => false, :group => :test
+
 group :cucumber, :test do
   gem "builder"
   gem 'capybara'

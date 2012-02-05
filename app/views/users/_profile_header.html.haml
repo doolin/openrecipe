@@ -1,0 +1,8 @@
+.profile_header.cf
+  .profile_name.cf
+    %h2 Profile
+    = render :partial => "users/social_links"
+  .profile-gravatar.align-right.cf
+    = link_to (gravatar_for User.find(@user.id),  :size => '140'), @user, :rel => 'author'
+    = render 'users/profile_links'
+    %br/

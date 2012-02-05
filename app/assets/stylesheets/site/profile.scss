@@ -1,0 +1,27 @@
+/**
+ * site/profile.scss
+ */
+
+ul.social-links {
+  //text-align: center;
+  margin: 0px 0 0px 0;
+  padding-bottom: 0;
+}
+
+ul.social-links li {
+  display: inline;
+  padding: 5px 5px;
+  margin-bottom: 0;
+}
+
+.g-plusone {
+  display: inline;
+}
+
+ul.social-links li a:hover {
+  text-decoration: none;
+}
+
+.profile-gravatar {
+  
+}

@@ -1,0 +1,6 @@
+.profile-links
+  - if (user_signed_in? && (current_user.id == @user.id))
+    = link_to 'Edit', edit_user_path(@profile)
+    |
+    \#{link_to 'Settings', edit_user_registration_path(@user.id), :class => 'settings'} |
+  = link_to 'Recipes', '/users/' + @user.id.to_s

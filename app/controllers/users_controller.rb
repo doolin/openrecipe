@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
   
+  # I don't like this, it smells...
   def show
-    @user   = User.find(params[:id])
+    if user_signed_in?
+      @user   = User.find(current_user.id)
+    else
+      @user   = User.find(params[:id])
+    end
+    #@projects = @member.projects
+    #@profile  = @member.profile
   end
 
 #=begin
